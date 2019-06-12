@@ -28,3 +28,7 @@
 12. git diff master origin/master
 
 13. git merge origin/master
+
+### Comando de Log
+
+#### git log --oneline --decorate --all --graph

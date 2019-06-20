@@ -1,7 +1,12 @@
-### UsandoGit
+# UsandoGit
 * Aprendendo a usar o github
 
-**Alguns Comandos para ser usados no terminal** na pasta do projeto
+### Comando de configurações Globais
+
+1. git config --global user.name "Seu Nome"
+2. git config --global user.email "seuemail@dominio.com.br"
+
+### Alguns Comandos para ser usados no terminal** na pasta do projeto
 
 1. git init 
 
@@ -15,7 +20,7 @@
 
 6. git status
 
-7. gith push -u origin master **podemos adicionar o parametro --force**
+7. git push -u origin master **podemos adicionar o parametro --force**
 
 8. tree .git **Permite visualizar a estrutura dos arquivos gerados pelo gi**
 

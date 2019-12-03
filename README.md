@@ -37,3 +37,6 @@
 ### Comando de Log
 
 #### git log --oneline --decorate --all --graph
+
+## Configurando terminal com usuário e senha
+#### git config credential.helper store

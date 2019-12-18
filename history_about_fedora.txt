@@ -1,0 +1,500 @@
+   1  yarn start
+    2  pm2 start startApp.sh --name StructReact
+    3  pm2 log StructReact
+    4  history
+    5  fdisk -l
+    6  df -h
+    7  pm2 log
+    8  docker ps -a
+    9  docker exec -it systemdbs psql carsfleet01 -U postgres
+   10  cd projetos/nodejs/
+   11  ls -l
+   12  cd CarsFleetServer/
+   13  pm2 start starApp.sh --name CarsFleet
+   14  cd ..
+   15  cd IntegradorApps/
+   16  pm2 start startServer.sh --name Integrator
+   17  cd ..
+   18  cd NewCarsFleetServer/
+   19  pm2 start startApp.sh --name NewCars
+   20  pm2 start startQueue.sh --name QueueCars
+   21  cd ..
+   22  ls -l
+   23  cd ..
+   24  cd ReactJS/
+   25  ls -l
+   26  cd StructReactJS/
+   27  pm2 start startApp.sh  --name StructJS
+   28  cd ..
+   29  ls -l
+   30  cd WebIntegratorApps/
+   31  pm2 start startApp.sh --name WebInteg
+   32  pm2 log Integrator
+   33  docker exec -it systemdbs psql -U postgres
+   34  docker exec -it systemdbs psql IntegratorApps -U postgres
+   35  \q
+   36  cd ~
+   37  pm2 list
+   38  docker ps -a
+   39  docker ps -a
+   40  pm2 list
+   41  docker ps -a
+   42  pm2 list
+   43  docker ps -a
+   44  pm2 list
+   45  pm2 logs QueueCars
+   46  exit
+   47  cd projetos/nodejs/
+   48  ls -l
+   49  cd ..
+   50  cd ReactJS/
+   51  ls -l
+   52  cd WebIntegratorApps/
+   53  git status
+   54  git add -A
+   55  vi .env
+   56  git commit -m "inclusão do comando de inicialização via shell no linux 'PM2'"
+   57  git status
+   58  git log --oneline --decorate --all --graph
+   59  git remote -v
+   60  git push -u origin master
+   61  git config --global user.name "alzo91"
+   62  git status
+   63  git remote -v
+   64  git log --oneline --decorate --all --graph
+   65  cd ..
+   66  cd StructReactJS/
+   67  git status
+   68  vi .gitignore
+   69  cp .env .env.example
+   70  git status
+   71  vi .gitignore
+   72  git status
+   73  git add -A
+   74  git commit -m "inclusão .env e incialização via shell para PM2"
+   75  git status
+   76  git log --oneline --decorate --all --graph
+   77  git push -u origin master
+   78  git log --oneline --decorate --all --graph
+   79  pm2 list
+   80  pm2 stop StructJS
+   81  pm2 delete StructJS
+   82  git status
+   83  git log --oneline --decorate --all --graph
+   84  git fetch
+   85  git diff master origin/master
+   86  git merge origin/mastergit merge origin/maste
+   87  git status
+   88  git log --oneline --decorate --all --graph
+   89  ls -l
+   90  rm -Rf node_modules/
+   91  ls -l
+   92  yarn
+   93  ls -l
+   94  git status
+   95  pm2 start startApp.sh --name StructJS
+   96  vi .env
+   97  pm2 list
+   98  pm2 logs StructJS
+   99  cd ..
+  100  cd WebIntegratorApps/
+  101  git status
+  102  git remote -v
+  103  ls -l
+  104  docker ps -a
+  105  docker exec -it systemdbs psql -U postgres
+  106  docker exec -it systemdbs psql carsfleet01 -U postgres
+  107  docker ps -a
+  108  docker restart redis
+  109  docker ps -a
+  110  pm2 list
+  111  pm2 0 restart
+  112  pm2 restart 0
+  113  pm2 restart 2
+  114  pm2 restart 3
+  115  pm2 logs
+  116  docker ps -a
+  117  docker logs redis
+  118  docker exec -it systemdbs psql carsfleet01 -U postgres
+  119  docker exec -it redis
+  120  docker exec -it redis redis-cli
+  121  docker exec -it redis redis-cli --start
+  122  docker exec -it redis redis-cli
+  123  docker exec -it systemdbs psql carsfleet02 -U postgres
+  124  docker ps -a
+  125  docker exec -it systemdbs psql carsfleet02 -U postgres
+  126  docker exec -it systemdbs psql -U postgres
+  127  docker exec -it systemdbs psql carsfleet02 -U postgres
+  128  cd /root/projetos/nodejs/NewCarsFleetServer/
+  129  git remote -v
+  130  git fetch
+  131  git log --oneline --decorate --all --graph
+  132  git diff master origin/master
+  133  git merge origin/master
+  134  git log --oneline --decorate --all --graph
+  135  git fetch
+  136  git log --oneline --decorate --all --graph
+  137  git diff master origin/master
+  138  git merge origin/master
+  139  docker exec -it systemdbs psql carsfleet02 -U postgres
+  140  docker ps -a
+  141  pm2 list
+  142  pm2 restart NewCars
+  143  pm2 restart Queuecars
+  144  pm2 restart QueueCars
+  145  exit
+  146  pm2 stop 0
+  147  pm2 delete 0
+  148  pm2 stop NewCars
+  149  pm2 stop QueueCars
+  150  cd projetos/nodejs/
+  151  cd ls -l
+  152  ls -l
+  153  cd NewCarsFleetServer/
+  154  git remote -v
+  155  git fetch
+  156  vi .env
+  157  git fetch
+  158  git diff master origin/master
+  159  git merge origin/master
+  160  pm2 list
+  161  pm2 restart NewCars
+  162  pm2 flush
+  163  pm2 list
+  164  pm2 restart NewCars
+  165  pm2 restart QueueCars
+  166  pm2 logs NewCars
+  167  pm2 logs Queue
+  168  pm2 list
+  169  pm2 stop NewCars
+  170  pm2 stop Queue
+  171  pm2 stop QueueCars
+  172  pm2 list
+  173  pm2 start QueueCars
+  174  pm2 start NewCars
+  175  pm2 logs NewCars
+  176  exit
+  177  pm2 logs NewCars
+  178  pm2 list
+  179  node -v
+  180  docker ps -a
+  181  docker exec -it systemdbs psql carsfleet02 -U postgres
+  182  docker exec -i -t systemdbs /bin/sh
+  183  exit
+  184  pm2 list
+  185  pm2 list
+  186  pm2 list
+  187  pm2 list
+  188  cd projetos/nodejs/
+  189  ls -l
+  190  cd NewCarsFleetServer/
+  191  ls -l
+  192  git fetch
+  193  git fetch
+  194  vi ~/.gitconfig
+  195  clear
+  196  git config credential.helper store
+  197  git fetch
+  198  git fetch
+  199  git fetch
+  200  pm2 list
+  201  git pull
+  202  pm2 list
+  203  pm2 logs NewCars
+  204  pm2 restart NewCars
+  205  vi src/routes.js
+  206  pm2 stop NewCars
+  207  pm2 start NewCars
+  208  pm2 stop NewCars
+  209  pm2 delete NewCars
+  210  ls -l
+  211  vi q\!
+  212  rm -Rf q\!
+  213  ls -l
+  214  pm2 start startApp.sh  --name NewCars
+  215  vi src/routes.js
+  216  vi src/routes.js
+  217  git fetch
+  218  git merge origin/master
+  219  pm2 list
+  220  pm2 restart NewCars
+  221  vi src/routes.js
+  222  vi src/routes.js
+  223  git pull
+  224  exit
+  225  pm2 list
+  226  pm2 stop Integrator
+  227  pm2 delete Integrator
+  228  cd projetos/nodejs/IntegradorApps/
+  229  vi package.json
+  230  yarn build
+  231  pm2 flush
+  232  pm2 start startServer.sh --name Integrator
+  233  pm2 logs Integrator
+  234  vi package.json
+  235  pm2 list
+  236  ls -l
+  237  pm2 list
+  238  pm2 stop Integrator
+  239  pm2 delete Integrator
+  240  node dist/server.js
+  241  node -v
+  242  yarn node dist/server.js
+  243  yarn start
+  244  yarn dev
+  245  pm2 start startServer.sh --name Integrator
+  246  pm2 logs Integrator
+  247  pm2 list
+  248  pm2 stop NewCars
+  249  pm2 stop QueueCars
+  250  pm2 delete QueueCars
+  251  pm2 delete NewCars
+  252  cd ..
+  253  cd NewCarsFleetServer/
+  254  ls -l
+  255  vi package.json
+  256  yarn build
+  257  ls -l
+  258  git status
+  259  yarn start
+  260  node dist/server.js
+  261  vi package.json
+  262  yarn start
+  263  pm2 start startApp.sh --name NewCars
+  264  pm2 start startQueue.sh --name QueueCars
+  265  pm2 startup systemd
+  266  pm2 list
+  267  who
+  268  docker ps -a
+  269  docker exec -i -t systemdbs /bin/sh
+  270  docker exec -it systemdbs psql carsfleet02 -U postgres
+  271  docker exec -it redis redis-cli
+  272  git log --oneline --decorate --all --graph
+  273  exit
+  274  pm2 list
+  275  uptime
+  276  ping www.rondaweb.com.br
+  277  pm2 list
+  278  docker exec -it systemdbs psql carsfleet02 -U postgres
+  279  docker ps -a
+  280  reboot
+  281  pm2 list
+  282  docker ps -a
+  283  pm2 logs NewCars
+  284  pm2 list
+  285  pm2 logs Integrator
+  286  pm2 flush
+  287  reboot
+  288  pm2 list
+  289  pm2 stop Integrator
+  290  pm2 stop NewCars
+  291  pm2 stop QueueCars
+  292  pm2 stop StructJS
+  293  pm2 stop WebInteg
+  294  pm2 list
+  295  pm2 unstartup systemd
+  296  reboot
+  297  to
+  298  p
+  299  top
+  300  pm2 flush
+  301  cd projetos/nodejs/
+  302  cd NewCarsFleetServer/
+  303  pm2 start startQueue.sh --name QueueCars
+  304  pm2 start startApp.sh --name NewCars
+  305  cd ..
+  306  cd IntegradorApps/
+  307  pm2 start startServer.sh --name Integrator
+  308  cd ..
+  309  cd ReactJS/
+  310  ls -
+  311  ls -l
+  312  cd StructReactJS/
+  313  pm2 start startApp.sh --name StructJS
+  314  cd ..
+  315  cd WebIntegratorApps/
+  316  pm2 start startApp.sh --name WebIntegrator
+  317  exit
+  318  pm2 list
+  319  docker ps -a
+  320  docker exec -it systemdbs psql carsfleet02 -U postgres
+  321  docker exec -i -t systemdbs /bin/sh
+  322  docker ps -a
+  323  docker exec -it systemdbs psql carsfleet02 -U postgres
+  324  docker exec -it redis redis-cli
+  325  cd projetos/nodejs/
+  326  ls -l
+  327  cd NewCarsFleetServer/
+  328  pm2 start startApp.sh --Name NewCars
+  329  pm2 start startApp.sh --name NewCars
+  330  pm2 start startQueue.sh --name QueueCars
+  331  cd ..
+  332  cd IntegradorApps/
+  333  pm2 start startServer.sh --name Integrador
+  334  pm2 stop Integrador
+  335  pm2 delete Integrador
+  336  pm2 start startServer.sh --name Integrator
+  337  cd ..
+  338  cd ..
+  339  cd ReactJS/
+  340  ls -l
+  341  cd StructReactJS/
+  342  pm2 start startApp.sh --name StructJS
+  343  cd ..
+  344  cd WebIntegratorApps/
+  345  pm2 start startApp.sh --name WebIntegrator
+  346  pm2 flush
+  347  pm2 monit
+  348  pm2 monit
+  349  pm2 logs Integrator
+  350  pm2 list
+  351  docker ps -a
+  352  uptime
+  353  pm2 list
+  354  docker exec -it systemdbs psql carsfleet02 -U postgres
+  355  clear
+  356  docker exec -i -t systemdbs /bin/sh
+  357  pm2 list
+  358  docker ps -a
+  359  pm2 list
+  360  pm2 monit
+  361  pm2 log Integrator
+  362  pm2 list
+  363  uptime
+  364  cd projetos/nodejs/
+  365  ls -l
+  366  cd NewCarsFleetServer/
+  367  pm2 start startApp.sh --name NewCars
+  368  pm2 start startQueue.sh --name QueueCars
+  369  cd ..
+  370  cd IntegradorApps/
+  371  ls -l
+  372  pm2 start startServer.sh --name Integrator
+  373  cd /root/projetos/ReactJS/
+  374  ls -l
+  375  cd StructReactJS/
+  376  pm2 start startApp.sh --name StructJS
+  377  cd ..
+  378  cd WebIntegratorApps/
+  379  pm2 start startApp.sh --name WebIntegrator
+  380  pm2 flush
+  381  docker ps -a
+  382  uptime
+  383  docker exec -i -t systemdbs /bin/sh
+  384  docker exec -it systemdbs psql carsfleet02 -U postgres
+  385  docker exec -it systemdbs psql IntegratorApps -U postgres
+  386  uptime
+  387  pm2 list
+  388  docker ps -a
+  389  pm2 start /root/projetos/nodejs/IntegradorApps/startServer.sh --name Integrator
+  390  pm2 start /root/projetos/nodejs/NewCarsFleetServer/startApp.sh --name NewCars
+  391  pm2 start /root/projetos/nodejs/NewCarsFleetServer/startQueue.sh --name QueueCars
+  392  pm2 stop 0
+  393  pm2 stop 1
+  394  pm2 stop 2
+  395  pm2 delete 0
+  396  pm2 delete 1
+  397  pm2 delete 2
+  398  cd projetos/nodejs/IntegradorApps/
+  399  pm2 start startServer.sh --name Integrator
+  400  cd ..
+  401  cd NewCarsFleetServer/
+  402  pm2 start startApp.sh --name NewCars
+  403  pm2 start startQueue.sh --name QueueCars
+  404  cd /root/projetos/ReactJS/
+  405  ls -l
+  406  cd WebIntegratorApps/
+  407  ls -l
+  408  pm2 start startApp.sh --name WebIntegrator
+  409  pm2 log WebIntegrator
+  410  pm2 list
+  411  git pull
+  412  git log --oneline --decorate --all --graph
+  413  pm2 flush
+  414  df -h
+  415  docker exec -it systemdbs psql IntegratorApps -U postgres
+  416  docker exec -i -t systemdbs /bin/sh
+  417  docker exec -it redis redis-cli
+  418  df -h
+  419  pm2 list
+  420  cd projetos/ReactJS/WebIntegratorApps/
+  421  git log --oneline --decorate --all --graph
+  422  pm2 list
+  423  docker exec -it systemdbs psql IntegratorApps -U postgres
+  424  pm2 list
+  425  pm2  log Integrator
+  426  pm2  log Integrator
+  427  docker exec -it systemdbs psql IntegratorApps -U postgres
+  428  docker exec -it systemdbs psql IntegratorApps -U postgres
+  429  ping www.terra.com.br
+  430  docker exec -it systemdbs psql IntegratorApps -U postgres
+  431  pm2 list
+  432  pm2 list
+  433  pm2 list
+  434  pm2 log WebIntegrator
+  435  pm2 list
+  436  docker exec -it systemdbs psql IntegratorApps -U postgres
+  437  docker exec -it systemdbs psql IntegratorApps -U postgres
+  438  pm2 list
+  439  pm2 list
+  440  pm2 list
+  441  docker exec -it systemdbs psql IntegratorApps -U postgres
+  442  pm2 list
+  443  pm2 show Integrator
+  444  pm2 monit
+  445  pm2 list
+  446  pm2 list
+  447  docker exec -it systemdbs psql IntegratorApps -U postgres
+  448  pm2 startup systemd
+  449  ausearch -c 'systemd'--raw | audit2allow -M my-systemd # semodule -X 300 -i my-systemd.pp
+  450  pm2 list
+  451  pm2 list
+  452  docker ps -a
+  453  ps aux | pm2
+  454  ps aux | grep pm2
+  455  sestatus
+  456  vi /etc/sestatus.conf
+  457  vi /etc/selinux/config
+  458  vi /etc/systemd/system/pm2-root.service
+  459  vi /etc/sestatus.conf
+  460  vi /etc/selinux/config
+  461  reboot
+  462  docker ps -a
+  463  pm2 list
+  464  pm2 Integrator
+  465  pm2 log Integrator
+  466  p2m flush
+  467  pm2 flush
+  468  pm2 list
+  469  docker ps -a
+  470  docker exec -it systemdbs psql IntegratorApps -U postgres
+  471  docker exec -i -t systemdbs /bin/sh
+  472  pm2 list
+  473  pm2 monit
+  474  pm2 list
+  475  pm2 stop Integrator
+  476  pm2 start Integrator
+  477  pm2 log Integrator
+  478  pm2 list
+  479  pm2 list
+  480  pm2 log Integrator
+  481  pm2 list
+  482  pm2 log Integrator
+  483  uptime
+  484  docker ps -a
+  485  pm2 list
+  486  pm2 log Integrator
+  487  pm2 list
+  488  pm2 list
+  489  pm2 log Integrator
+  490  history
+  491  exit
+  492  docker ps -a
+  493  pm2 list
+  494  uptime
+  495  uptime
+  496  pm2 list
+  497  docker ps -a
+  498  cp /root/.bash_history rotinas/historicos-2019-12-16
+  499  cp /root/.bash_history rotinas/historicos-2019-12-16.txt
+  500  history

@@ -8,31 +8,47 @@
 
 ### Alguns Comandos para ser usados no terminal** na pasta do projeto
 
-1. git init 
+###### 1. *Iniciando projeto*
+- git init
 
-2. git status
+###### 2.*Vendo o status do projeto*
+- git status
 
-3. git add -A
+###### 3. **Incluindo as modificações e arquivos**
+- git add -A
 
-4. git commit -m "inclusão dos arquivos"
+###### 4. *Após a inclusão de arquivos ou modificações*
+- git commit -m "inclusão dos arquivos"
 
-5. git remote add origin https://github.com/alzo91/UsandoGit.git
+###### 5. *Apenas configuramos o git remote quando iniciamos o projeto uma unica vez*
+- git remote add origin https://github.com/alzo91/UsandoGit.git
 
-6. git status
+###### 6. *Realizando consulta de status de arquivos e modificações*
+- git status
 
-7. git push -u origin master **podemos adicionar o parametro --force**
+###### 7. **Comando abaixo serve para enviarmos as alterações e inclusões para o git**
+- git push -u origin master 
+- [*] **observação:** podemos adicionar o parametro **--force**
 
-8. tree .git **Permite visualizar a estrutura dos arquivos gerados pelo gi**
+###### 8. *Visualizando a estrutura dos arquivos gerados pelo git*
+- tree .git
 
-9. git pull origin master **Não é aconselhado, pois faz merge automáticamente**
+###### 9. *Recebendo as modificações efetuadas e/ou pegando o codigo mais atualizado do repositorio*
+- git pull origin master 
+- [*] Observação: **Não é aconselhado, pois faz merge automáticamente**
+  
+###### 10. *Visualizando qual git remoto esta configurado*
+- git remote -v
 
-10. git remote -v **vendo para qual git remoto esta configurado**
+###### 11. *Recebendo as modificações efetuadas e/ou pegando o codigo mais atualizado do repositorio*
+- git fetch 
+- [*] Observação **Apenas faz o download do conteudo para ser atualizado, não inclui o merge**
 
-11. git fetch **Faz download do conteudo para ser atualizado**
+###### 12. *Vendo o que foi feito de modificações*
+- git diff master origin/master
 
-12. git diff master origin/master
-
-13. git merge origin/master
+###### 13.*Realizando merge do conteudo que foi feito download pelo* _git fetch_
+- git merge origin/master
 
 ### Comando de Log
 

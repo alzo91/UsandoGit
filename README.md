@@ -22,6 +22,8 @@
 
 ###### 5. *Apenas configuramos o git remote quando iniciamos o projeto uma unica vez*
 - git remote add origin https://github.com/alzo91/UsandoGit.git
+- Token
+- [*] git remote set-url origin https://TOKEN@github.com/LOGIN/app.git
 
 ###### 6. *Realizando consulta de status de arquivos e modificações*
 - git status
@@ -57,5 +59,4 @@
 ## Configurando terminal com usuário e senha
 #### git config credential.helper store
 
-## Token
-### https://TOKEN@github.com/LOGIN/app.git
+

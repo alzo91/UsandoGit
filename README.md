@@ -56,3 +56,6 @@
 
 ## Configurando terminal com usuário e senha
 #### git config credential.helper store
+
+## Token
+### https://TOKEN@github.com/LOGIN/app.git

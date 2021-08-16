@@ -23,28 +23,28 @@
 ###### 5. *Apenas configuramos o git remote quando iniciamos o projeto uma unica vez*
 - git remote add origin https://github.com/alzo91/UsandoGit.git
 - Token
-- [*] git remote set-url origin https://TOKEN@github.com/LOGIN/app.git
+- [x] git remote set-url origin https://TOKEN@github.com/LOGIN/app.git
 
 ###### 6. *Realizando consulta de status de arquivos e modificações*
 - git status
 
 ###### 7. **Comando abaixo serve para enviarmos as alterações e inclusões para o git**
 - git push -u origin master 
-- [*] **observação:** podemos adicionar o parametro **--force**
+- [x] **observação:** podemos adicionar o parametro **--force**
 
 ###### 8. *Visualizando a estrutura dos arquivos gerados pelo git*
 - tree .git
 
 ###### 9. *Recebendo as modificações efetuadas e/ou pegando o codigo mais atualizado do repositorio*
 - git pull origin master 
-- [*] Observação: **Não é aconselhado, pois faz merge automáticamente**
+- [x] Observação: **Não é aconselhado, pois faz merge automáticamente**
   
 ###### 10. *Visualizando qual git remoto esta configurado*
 - git remote -v
 
 ###### 11. *Recebendo as modificações efetuadas e/ou pegando o codigo mais atualizado do repositorio*
 - git fetch 
-- [*] Observação **Apenas faz o download do conteudo para ser atualizado, não inclui o merge**
+- [x] Observação **Apenas faz o download do conteudo para ser atualizado, não inclui o merge**
 
 ###### 12. *Vendo o que foi feito de modificações*
 - git diff master origin/master
